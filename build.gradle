@@ -37,7 +37,7 @@ dependencyManagement {
 
 docker {
     dependsOn(build)
-    name "ardacontainerregistry.azurecr.io/${project.group}/$bootJar.baseName"
+    name "d45srvlfjd4se.azurecr.io/${project.group}/$bootJar.baseName"
     files bootJar.archivePath
     buildArgs([
             'JAR_FILE': "$bootJar.archiveName"
